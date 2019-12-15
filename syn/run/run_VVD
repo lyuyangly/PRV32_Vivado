@@ -1,0 +1,4 @@
+#!/bin/sh
+source /home/software/xilinx/Vivado/2015.2/settings64.sh
+vivado -nojournal -mode batch -source ../scr/syn_common.tcl -tclargs ZYNQ_PRV32
+rm -rf .Xil fsm_encoding.os
