@@ -7,6 +7,9 @@ set DESIGN [lindex $argv 0]
 config_webtalk -user off
 
 # -----------------------------------------------------------------------------
+create_project -in_memory
+
+# -----------------------------------------------------------------------------
 proc read_filelist {filelist} {
     global hdl_list
     global incdir_list
