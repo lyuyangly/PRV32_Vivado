@@ -20,10 +20,10 @@ proc read_filelist {filelist} {
         } elseif {[regexp {^\S+\.v} $fname]} {
             lappend hdl_list $fname
         } elseif {[regexp {^-v} $fname]} {
-            regsub {^-v} $fname "" $fname_sub
+            regsub {^-v} $fname "" fname_sub
             lappend hdl_list $fname_sub
         } elseif {[regexp {^\+incdir\+} $fname]} {
-            regsub {^\+incdir\+} $fname "" $fname_sub
+            regsub {^\+incdir\+} $fname "" fname_sub
             lappend incdir_list $fname_sub
         }
     }
